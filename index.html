@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mates</title>
+    <title>fORMULARIO</title>
   </head>
   <body>
     <h1>Desafio Nº 1 "ol" "ul"</h1>
@@ -58,46 +58,44 @@
       </tr>
     </table>
 
-    <hr />
-
-    <h1>Desafia Nº 3 atributo value</h1>
-    <h2>botones de radio y casillas de chequeo</h2>
-    <h1>control de seleccion</h1>
-    <h1>etiqueta label</h1>
-    <h2>for,label y debajo el imput</h2>
-
-    <hr />
-
     <h1>FORMULARIO</h1>
+
+    <form action="">
+      <label for="nombre">Nombre:</label>
+      <input name="nombre" id="nombre" type="text" />
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="apellido" />
+      <label for="tag">nombre de cuenta:</label>
+      <input type="text" name="nametag" id="tag" />
+    </form>
+    <br />
     <form action="">
       <label for="email"> Email:</label>
-      <input type="email" name="" id="email" />
+      <input type="text" name="" id="email" />
       <label for="confirmartuemail">Confirmar Tu Email:</label>
       <input
-        type="confirmartuemail"
+        type="text"
         name="confirmartuemail"
         id="confirmartuemail"
       />
     </form>
     <br />
     <form action="">
-      <label for="nombre">Nombre:</label>
-      <input name="nombre" id="nombre" type="nombre" />
-      <label for="apellido">Apellido:</label>
-      <input type="apellido" name="apellido" id="apellido" />
+      <label for="pass">contraseña:</label>
+      <input type="password" name="contraseña" id="pass" />
+      <label for="password">confirmar contraseña:</label>
+      <input type="password" name="confirmar contraseña" id="password" />
     </form>
+
     <br />
     <form action="">
-      Fecha de nacimiento :
-      <input type="date" name="" id="" />
-      horario de atencion :
-      <input type="checkbox" name="" id="" /> 8-10hs
-
-      <input type="checkbox" name="" id="" /> 10-12hs
-
-      <input type="checkbox" name="" id="" /> 12-14hs
-
-      <input type="checkbox" name="" id="" /> 14-16hs
+      fecha de nacimiento:
+      <input type="date" name="fecha de nacimiento" id="fecha" />
+      Seleccione su sexo :
+      <label for="sexo">masculino</label>
+      <input type="radio" name="sexo" id="sexo" />
+      <label for="sex">femenino</label>
+      <input type="radio" name="sexo" id="sex" />
     </form>
 
     <form action="">
@@ -121,8 +119,32 @@
         Consequuntur, temporibus. Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Consequuntur, temporibus. Lorem ipsum dolor sit amet
         consectetur adipisicing elit. Consequuntur, temporibus.
-        <input type="checkbox" name="" id="" />Aceptar
+        <h4>Acepta términos y condiciones</h4>
+        <input type="checkbox" name="acepta" value="1" />
       </fieldset>
+    </form>
+
+    <form action="">
+      <input type="radio" name="horas" id="horario" />
+      <label for="horario">8-10hs</label>
+      <input type="radio" name="horas" id="horario" />
+      <label for="horario">8-10hs</label>
+      <input type="radio" name="horas" id="horario" />
+      <label for="horario">8-10hs</label>
+      <input type="radio" name="horas" id="horario" />
+      <label for="horario">8-10hs</label>
+    </form>
+
+    <form action="">
+      horario de atencion :
+      <input type="radio" name="horas" id="horario" />
+      <label for="horario">8-10hs</label>
+      <input type="radio" name="horas" id="horario" />
+      <label for="horario">10-12hs</label>
+      <input type="radio" name="horas" id="horario" />
+      <label for="horario">12-14hs</label>
+      <input type="radio" name="horas" id="horario" />
+      <label for="horario">14-16hs</label>
     </form>
   </body>
 </html>
